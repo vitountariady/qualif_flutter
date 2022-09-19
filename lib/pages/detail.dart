@@ -14,7 +14,6 @@ class _DetailState extends State<Detail> {
   TextEditingController commentController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    print(widget.curr.comments);
     return DefaultTabController(
       length: 2,
       child: Scaffold(

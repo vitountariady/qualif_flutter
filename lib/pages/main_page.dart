@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:qualif_flutter/pages/home.dart';
+import 'package:qualif_flutter/pages/logout.dart';
 import 'package:qualif_flutter/pages/movies.dart';
 
 class MainPage extends StatefulWidget {
@@ -21,9 +22,7 @@ class _MainPageState extends State<MainPage> {
         username: widget.username,
       ),
       MoviesPage(),
-      Home(
-        username: "page3",
-      ),
+      const LogoutPage()
     ];
     return Scaffold(
       body: pages[selected],
